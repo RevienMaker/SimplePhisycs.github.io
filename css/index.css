@@ -134,3 +134,22 @@
 .tema img{
     width: 190px;
 }
+
+.creditos{
+    color: white;
+    background-color: rgb(37, 37, 37);
+    padding: 40px;
+}
+.creditos h2{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+}
+.nombres{
+    padding: 10px 100px;
+}
+.nombres h2{
+    text-align: start;
+}
+.nombres p{
+    font-size: 20px;
+}
