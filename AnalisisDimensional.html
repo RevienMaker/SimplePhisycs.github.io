@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis dimensional</title>
+
+    <link rel="stylesheet" href="./css/General.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/Navbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+
+     <!-- Favicon -->
+     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1467/1467187.png" type="image/x-icon">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Simple Phisycs</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Clases
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="/(M.R.U).html">Movimiento Rectilíneo Uniforme (M.R.U.)</a></li>
+                  <li><a class="dropdown-item" href="/VectorEnFisica.html">Definición de vector en física</a></li>
+                  <li><a class="dropdown-item" href="/AnalisisDimensional.html">Análisis dimensional</a></li>
+                  <li><a class="dropdown-item" href="/(M.R.U.V).html">Movimiento Rectilineo Uniformemente Variado (M.R.U.V)</a></li>
+                  <li><a class="dropdown-item" href="/CaidaLibre.html">Caída Libre</a></li>
+                  <li><a class="dropdown-item" href="/MovimientoParabolico.html">Movimiento parabólico</a></li>
+                  <li><a class="dropdown-item" href="/MovimientoCircular.html">Movimiento circular</a></li>
+                  <li><a class="dropdown-item" href="#">-</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+      <div class="cont--nav">
+        <section class="cont-principal">
+            <div class="cont-principal__contenido">
+
+                <div class="analisisDimensional">
+                    <br id="analisisDimensional">
+                    <h1>Análisis dimensional
+                    </h1><br><br>
+
+                    <p>
+                        Análisis dimensional es el estudio o análisis de las relaciones entre diferentes magnitudes, identificando sus dimensiones y unidades de medida. Veamos algunos conceptos adicionales:
+
+                    </p>
+
+                    <br>
+                    <br>
+                    <br>
+                    <div class="magnitud">
+                        <h3>Magnitud</h3>
+                        <p>Es todo aquello que se puede medir.</p>
+                    </div>
+
+
+                    <br>
+                    <br>
+                    <br>
+                    <div class="medir">
+                        <h3>Medir</h3>
+                        <p>
+                            Comparar una magnitud con otra magnitud de la misma especie. Por ejemplo, podemos realizar las siguientes mediciones:
+
+                            <ul>
+                                <li>
+                                    <p>
+                                        Si medimos la distancia de mi casa a la universidad, es de 300 metros. Aquí comparamos con el metro patrón.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Si medimos la masa de mi cuerpo, es de 70 kg. Aquí comparamos con el kilogramo patrón.
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <br id="ComoSeClasifican">
+                    <br>
+                    <br>
+                    <div class="Comoseclasifican">
+                        <h2>¿Cómo se clasifican las magnitudes?</h2>
+                        <p>
+                            Las magnitudes se pueden clasificar de acuerdo a su origen y de acuerdo a su naturaleza.
+                        </p>
+
+                        <h3>Clasificación de las magnitudes:</h3>
+                        <div class="nota">
+                            <span>Por su origen:</span>
+                            <ol>
+                                <li>
+                                    Magnitudes fundamentales.
+                                </li>
+                                <li>
+                                    Magnitudes derivadas.
+                                </li>
+                            </ol>
+                        </div>
+                        <br>
+                        <div class="nota">
+                            <span>Por su naturaleza:</span>
+                            <ol>
+                                <li>
+                                    Magnitudes escalares.
+                                </li>
+                                <li>
+                                    Magnitudes vectoriales.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <br>
+                    <br><br>
+                    <div class="porsuorigen">
+                        <h3>Por su origen:</h3>
+                        <span>Magnitudes fundamentales:</span>
+                        <p>
+                            Son aquellas elegidas magnitudes elegidas por convención, que permiten expresar cualquier física en términos de ellas. <br><br>
+
+                            En el sistema internacional, tenemos 7 magnitudes fundamentales:
+                        </p>
+                        <br>
+                        <div class="imagenes-center">
+                            <img src="https://matemovil.com/wp-content/uploads/2019/01/Magnitudes-fundamentales-an%C3%A1lisis-dimensional2.jpg" alt="magnitud imagen">
+                        </div>
+
+                    </div>
+
+                    <br>
+                    <br><br>
+                    <div class="derivadas">
+                        <h3>Magnitudes derivadas:</h3>
+                        <span>Magnitudes fundamentales:</span>
+                        <p>
+                            Son aquellas magnitudes que se expresan en función de las magnitudes fundamentales. Por ejemplo: área, velocidad, fuerza, trabajo.<br><br>
+
+                            Las fórmulas dimensionales de las magnitudes derivadas son las siguientes:
+                        </p>
+                        <br>
+                        <div class="imagenes-center">
+                            <img src="https://matemovil.com/wp-content/uploads/2015/02/Magnitudes-derivadas-an%C3%A1lisis-dimensional3.jpg" alt="magnitud imagen">
+                        </div>
+                    </div>
+
+                    <br>
+                    <br><br>
+                    <div class="porsunaturaleza">
+                        <h3>Por su naturaleza:</h3><br><br>
+                        <span>Magnitudes escalares:</span><br><br>
+                        <p>
+                            Son aquellas que enunciado su valor seguido de su correspondiente unidad quedan perfectamente definidas, a veces afectado de un signo negativo convencionalmente elegido. Por ejemplo:<br><br>
+
+                            <ul>
+                                <li>
+                                    <p>
+                                        Longitud: 5 m.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Temperatura: -12 °C.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Tiempo: 5 s.
+                                    </p>
+                                </li>
+                            </ul><br>
+
+                            Entre las magnitudes escalares más utilizadas, tenemos: longitud, masa, tiempo, volumen, densidad, trabajo, potencia, energía, carga eléctrica, intensidad de corriente eléctrica, potencial eléctrico, iluminación.
+                        </p><br><br>
+
+                        <span>Magnitudes vectoriales:</span><br><br>
+                        <p>
+                            Son aquellas que además de conocer su módulo o valor, es necesario conocer su dirección y sentido para que esté plenamente definida. <br><br>
+
+                            Entre las magnitudes vectoriales más utilizadas, tenemos: desplazamiento, velocidad, aceleración, fuerza, potencia, torque, impulso, cantidad de movimiento, intensidad de campo eléctrico, inducción magnética.
+                        </p>
+                    </div>
+
+                    <br id="AparaQueSirve">
+                    <br><br>
+                    <div class="paraquesirve">
+                        <h2>¿Para qué sirve el análisis dimensional?</h2><br>
+
+                        <p>
+                            El análisis dimensional nos permite:
+
+                            <ul>
+                                <li>
+                                    <p>
+                                        Comprobar la veracidad de las fórmulas físicas mediante el principio de homogeneidad dimensional.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Expresar las magnitudes derivadas en función de las magnitudes fundamentales.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Determinar fórmulas empíricas a partir de datos experimentales.
+                                    </p>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <br id="ComoSeRepresenta">
+                    <br><br>
+                    <div class="comoserepresenta">
+                        <h2>¿Cómo se representa una magnitud física?</h2><br><br>
+
+                        <p>
+                            Sea A la magnitud física, entonces: <br>
+                            [A] : dimensión de la magnitud física de A.
+                        </p>
+                    </div>
+
+                    <br id="PrincipioDeHomogeneidad">
+                    <br><br>
+                    <div class="proncipiodehomogeneidaddimensional">
+                        <h2>Principio de homogeneidad dimensional</h2><br><br>
+
+                        <p>
+                            Si una fórmula física es correcta, entonces todos los términos de la ecuación o fórmula son dimensionalmente iguales. Por ejemplo:
+
+                            <div class="imagenes-center">
+                                <p>
+                                    Si: A = B + C/D <br>
+                                    Entonces: [A] = [B] = [C/D]
+                                </p>
+                            </div><br>
+
+                            Recuerda que <b>sólo se pueden sumar magnitudes de la misma especie</b>.
+                        </p>
+                    </div><br><br>
+
+                    <div class="Ejercicio1">
+                        <h3>Ejercicio 1:</h3><br>
+                        <p>
+                            Hallar las dimensiones de z, sabiendo que x: masa, y que la siguiente ecuación es dimensionalmente correcta:
+                        </p>
+
+                        <div class="imagenes-center">
+                            <p>
+                               <b>z = x + y</b> 
+                            </p>
+                        </div><br>
+
+                        <p>
+                            <b>Solución:</b><br><br>
+
+                            Si la ecuación, es dimensionalmente correcta, entonces sus términos son dimensionalmente iguales (principio de homogeneidad dimensional).
+                        </p>
+
+                        <div class="imagenes-center">
+                            <p>
+                                <b>[z] = [x] = [y] </b><br><br>
+                                Sabiendo que x: masa, entonces… <b>[z] = M = [y]</b>
+                            </p>
+                        </div><br>
+
+                        <p>Respuesta: <b>[z] = M</b> </p>
+
+                    </div>
+
+                    <br id="AlgunasPropiedades">
+                    <br><br>
+                    <div class="Algunaspropiedadesdelanalisisdimensional">
+                        <h2>Algunas propiedades del análisis dimensional</h2><br><br>
+                        <span>Propiedad de la suma y resta:</span><br>
+
+                        <p>
+                            Solo se puede sumar o restar magnitudes de la misma especie, y el resultado de dicha operación será igual a la misma magnitud:
+
+                            <div class="imagenes-center">
+                                <b>
+                                    L + L + L = L <br><br>
+
+                                    M – M = M
+                                </b>
+                            </div><br>
+
+                            Por otro lado, <b>las reglas de multiplicación y división si se cumplen</b>: <br><br>
+
+                            <div class="imagenes-center">
+                                <b>
+                                    L‧L‧M = L2M
+                                </b>
+                            </div><br>
+                            <div class="imagenes-center">
+                                <img src="https://matemovil.com/wp-content/uploads/2019/02/an%C3%A1lisis-dimensional-ejercicios-1.jpg" alt="magnitud imagen">
+                            </div>
+                        </p>
+                    </div>
+
+                    <br><br>
+                    <div class="Ejercicio2">
+                        <h3>Ejercicio 2:</h3>
+                        <p>
+                            Encontrar la ecuación dimensional del potencial eléctrico V, sabiendo que:
+
+                            <div class="imagenes-center">
+                                <img src="https://matemovil.com/wp-content/uploads/2019/02/an%C3%A1lisis-dimensional-ejercicios-2.jpg" alt="magnitud imagen">
+                            </div>
+
+                            <b>
+                                Solución:
+                            </b>
+
+                            Sabemos que: <br><br>
+
+                            <ul>
+                                <li>
+                                    [trabajo] = ML2T-2
+                                </li>
+                                <li>
+                                    [[carga] = IT
+                                </li>
+                            </ul> <br>
+
+                            Por ello:
+
+                            <div class="imagenes-center">
+                                <img src="https://matemovil.com/wp-content/uploads/2019/02/an%C3%A1lisis-dimensional-ejercicios-3.jpg" alt="magnitud imagen">
+                            </div>
+                        </p>
+                    </div>
+
+                    <br id="PropiedadDeLosNumeros">
+                    <br><br>
+                    <div class="propiedaddelosnumeros">
+                        <h2>Propiedad de los números</h2><br><br>
+
+                        <p>
+                            Los números son adimensionales. De manera práctica, la dimensión de un número es igual a 1. Incluimos en los números a: ángulos, funciones trigonométricas, funciones logarítmicas, constantes numéricas. Ejemplos:
+
+                            <ul>
+                                <li>
+                                    [5]=1
+                                </li>
+                                <li>
+                                    [-8]=1
+                                </li>
+                                <li>
+                                    [log25]=1
+                                </li>
+                                <li>
+                                    [π]=1
+                                </li>
+                                <li>
+                                    [30°]=1
+                                </li>
+                                <li>
+                                    [sen60°]=1
+                                </li>
+                            </ul>
+
+                            También, se cumple para las raíces: <br>
+                            
+                            <img src="https://matemovil.com/wp-content/uploads/2019/02/an%C3%A1lisis-dimensional-ejercicios-5.jpg" width="70" alt="magnitud imagen">
+                        </p>
+                    </div>
+                    <br><br>
+                    <div class="Ejercicio3">
+                        <h3>Ejercicio 3:</h3><br>
+                        <p>
+                            Si k=12mg(log5), hallar las dimensiones y unidades de k, sabiendo que la ecuación es dimensionalmente correcta. Además, m: masa, g: aceleración de la gravedad. <br><br>
+
+                            <b>Solución:</b> <br>
+
+                            <div class="imagenes-center">
+                                k=12mg(log5) <br> <br>
+
+                                [k]=[12][m][g][log5]
+                            </div><br>
+
+                            Como los números son adimensionales, entonces [12]=1; y también [log5]=1 <br><br>
+
+                            <div class="imagenes-center">
+                                [k]=1[m][g]1 <br><br>
+
+                                [k]=1‧(M)‧(LT-2)‧1 <br><br>
+
+                                [k]=MLT-2
+                            </div>
+                        </p>
+                        
+                        <br id="PropiedadDeLosExponentes">
+                        <br><br>
+                        <h2>Propiedad de los exponentes:</h2><br><br>
+                        <p>
+                            Los exponentes son siempre números, por ello, la dimensión de un exponente se considera de forma práctica igual a 1.
+                        </p>
+                    </div>
+                    <br><br>
+                    <div class="Ejercicio4">
+                        <h3>Ejercicio 4:</h3><br>
+                        <p>
+                            En la siguiente fórmula física, encontrar las dimensiones de k, sabiendo que t: tiempo.
+
+                            <div class="imagenes-center">
+                                y = kekt
+                            </div><br>
+
+                            <b>Solución:</b><br><br>
+
+                            Gracias a la propiedad de los exponentes, sabemos que estos siempre son números, por ello, su dimensión es igual a 1. En este caso, el exponente de «e» es k.t
+
+                            <div class="imagenes-center">
+                                <img src="https://matemovil.com/wp-content/uploads/2019/02/an%C3%A1lisis-dimensional-ejercicios-6.jpg" alt="magnitud imagen">
+                            </div>
+                        </p>
+                        
+                        <br id="PropiedadDeLosAngulos">
+                        <br><br>
+                        <h2>Propiedad de los ángulos</h2><br><br>
+                        <p>
+                            Las funciones trigonométricas se aplican a los ángulos, los cuáles son números y se considera de forma práctica que su dimensión es igual a 1.
+                        </p>
+                    </div>
+                    <br><br>
+                    <div class="Ejercicio5">
+                        <h3>Ejercicio 5:</h3><br>
+                        <p>
+                            En la siguiente fórmula física, indicar la dimensión de w, sabiendo que A: longitud; t: tiempo.
+
+                            <div class="imagenes-center">
+                                x=wAsen(wt)
+                            </div><br>
+
+                            <b>Solución:</b><br><br>
+
+                            En esta fórmula, vemos una función trigonométrica, la función seno. Las funciones trigonométricas, solo se aplican a los ángulos, los cuáles son números, y tienen dimensión igual a 1.
+
+                            <div class="imagenes-center">
+                                <img src="https://matemovil.com/wp-content/uploads/2019/02/an%C3%A1lisis-dimensional-ejercicios-7.jpg" alt="magnitud imagen">
+                            </div>
+                        </p><br><br>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="navegacion-lateral">
+            <div class="cuadro-contenedor">
+                <div class="cuadro-titulo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                      </svg>
+                    <h3>Navegación</h3>
+                </div>
+                <div class="cuadro">
+                    <a href="#analisisDimensional">
+                        -Análisis dimensional
+                    </a>
+                    <a href="#ComoSeClasifican">
+                        -¿Cómo se clasifican las magnitudes?
+                    </a>
+                    <a href="#AparaQueSirve">
+                        -¿Para qué sirve el análisis dimensional?
+                    </a>
+                    <a href="#ComoSeRepresenta">
+                        -¿Cómo se representa una magnitud física?
+                    </a>
+                    <a href="#PrincipioDeHomogeneidad">
+                        -Principio de homogeneidad dimensional
+                    </a>
+                    <a href="#PropiedadDeLosNumeros">
+                        -Propiedad de los números
+                    </a>
+                    <a href="#PropiedadDeLosExponentes">
+                        -Propiedad de los exponentes:
+                    </a>
+                    <a href="#PropiedadDeLosAngulos">
+                        -Propiedad de los ángulos
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>

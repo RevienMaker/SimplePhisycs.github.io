@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+:root{
+    --color-titulos: #e79eff;
+    --color-notas: #ffe180;
+    --color-texto-resaltado: #ff94a2;
+    --color-ejemplos: #ff8097;
+    --color-azulclaro: #b8e4ff;
+
+}
+
+.navbar{
+    border-bottom: 2px solid var(--color-ejemplos);
+    background-color: #ffe9ed;
+}
+.navbar-brand{
+    font-weight: 700;
+    color: rgb(69, 69, 69);
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Concert One', cursive;
+}
+.navbar-brand:hover{
+    color: var(--color-ejemplos);
+}
+.collapse a{
+    font-weight: 700;
+    color: rgb(69, 69, 69);
+}
+.collapse a:hover{
+    color: var(--color-ejemplos);
+}
+.collapse a::selection{
+    color: var(--color-ejemplos);
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+:root{
+    --color-titulos: #e79eff;
+    --color-notas: #ffe180;
+    --color-texto-resaltado: #ff94a2;
+    --color-ejemplos: #ff8097;
+    --color-azulclaro: #b8e4ff;
+
+}
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Roboto Slab', serif;
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    background-color: white;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenFondo1{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+.imagenFondo2{
+    position: absolute;
+    z-index: -1;
+    left: 42.5%;
+    bottom: 55%;
+}
+.imagenFondo3{
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    bottom: 0;
+}
+@media (max-width: 1150px){
+    .imagenFondo3{
+        opacity: 0;
+    }
+}
+.imagenFondo4{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+.imagenFondo5{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+}
+.imagenFondo6{
+    position: absolute;
+    z-index: -1;
+    right: 5%;
+    bottom: 0;
+}
+.arrow{
+    width: 50px;
+    position: absolute;
+    left: 47.5%;
+    bottom: 2%;
+}
+.header__texto{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(161, 227, 255, 0.292);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.header__texto h1{
+    font-weight: 700;
+    font-size: 65px;
+    font-family: 'Concert One', cursive;
+}
+.clases-temas{
+    background-color: #b8e4ffcc;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    -webkit-box-shadow: -3px -7px 46px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px -7px 46px -3px rgba(0,0,0,0.75);
+    box-shadow: -3px -7px 46px -3px rgba(0,0,0,0.75);
+}
+.tema{
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .3s;
+}
+.tema:hover{
+    border: 3px solid var(--color-notas);
+}
+.tema h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: black;
+    font-family: 'Concert One', cursive;
+}
+.tema a{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.tema a:hover{
+    color: black;
+}
+.tema img{
+    width: 190px;
+}

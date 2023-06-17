@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+
+:root{
+    --color-titulos: #e79eff;
+    --color-notas: #ffe180;
+    --color-texto-resaltado: #ff94a2;
+    --color-ejemplos: #ff8097;
+    --color-azulclaro: #b8e4ff;
+
+}
+*{
+    scroll-behavior: smooth;
+    font-family: 'Roboto Slab', serif;
+}
+.cont--nav{
+    display: flex;
+}
+.cont-principal{
+    width: 70%;
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    background-color: var(--color-titulos);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+    font-weight: 700;
+
+    font-family: 'Concert One', cursive;
+}
+h2{
+    background-color: var(--color-titulos);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin: 0;
+    color: white;
+}
+h3{
+    color: var(--color-titulos);
+    font-size: 23px;
+    margin: 0;
+}
+span{
+    color: var(--color-texto-resaltado);
+    font-size: 19px;
+}
+p{
+    font-size: 18px;
+}
+.imagenes-center{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    border-radius: 10px;
+    max-width: 700px;
+}
+.nota{
+    margin: 0 20px;
+    background-color: #ffe18023;
+    border: 2px solid var(--color-notas);
+    padding: 20px;
+    border-radius: 20px;
+}
+.ejemplo{
+    margin: 0 20px;
+    background-color: #ff809719;
+    border: 2px solid var(--color-ejemplos);
+    padding: 20px;
+    border-radius: 5px;
+}
+.ejemplo h3{
+    color: var(--color-ejemplos);
+}
+.dividir{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+.dividir .linea{
+    height: 200px;
+    border: 1px solid black;
+}
+.linea_{
+    width: 100%;
+    height: 1px;
+    border: 1px solid var(--color-ejemplos);
+}
+
+
+.navegacion-lateral{
+    width: 30%;
+}
+.cuadro-contenedor{
+    position: sticky;
+    top: 80px;
+    margin-top: 130px;
+    padding: 10px;
+    max-width: 300px;
+}
+.cuadro{
+    border-radius: 0 0 5px 5px;
+    background-color: #e79eff30;
+    margin-right: 20px;
+    padding: 20px;
+    border: 2px solid var(--color-titulos);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cuadro-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+    background-color: #e79eff30;
+    padding: 2px;
+    margin-right: 20px;
+    border: 2px solid var(--color-titulos);
+    border-bottom: none;
+    text-align: start;
+}
+.cuadro-titulo h3{
+    font-size: 20px;
+    margin: 5px;
+    color: black;
+    font-family: 'Concert One', cursive;
+}
+.cuadro a{
+    text-decoration: none;
+    color: rgb(69, 69, 69);
+    font-weight: 600;
+}
+.cuadro a:hover{
+    color: black;
+}
+
+@media (max-width: 1080px){
+    .cont-principal{
+        width: 75%;
+    }
+    .navegacion-lateral{
+        width: 25%;
+    }
+    .cuadro{
+        gap: 5px;
+    }
+    .cuadro a{
+        font-size: 13px;
+    }
+}
