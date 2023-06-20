@@ -162,3 +162,27 @@ img{
         font-size: 13px;
     }
 }
+
+@media (max-width: 896px){
+    .navegacion-lateral{
+        display: none;
+    }
+    .cont-principal{
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cont-principal__contenido{
+        width: 100%;
+    }
+    img{
+        border-radius: 10px;
+        width: 400px;
+        max-width: 500px;
+    }
+    .ejemplo img{
+        width: 300px;
+    }
+}

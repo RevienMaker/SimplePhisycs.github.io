@@ -30,6 +30,9 @@
     left: 0;
     bottom: 0;
 }
+.imagenFondo1 img{
+    width: 500px;
+}
 .imagenFondo2{
     position: absolute;
     z-index: -1;
@@ -152,4 +155,69 @@
 }
 .nombres p{
     font-size: 20px;
+}
+
+@media (max-width: 896px){
+    .tema{
+        height: 500px;
+    }
+    .tema a{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenFondo1{
+        width: 50px;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+    }
+    .imagenFondo1 img{
+        width: 400px;
+    }
+    .imagenFondo2{
+        position: absolute;
+        z-index: -1;
+        left: 27%;
+        bottom: 60%;
+    }
+    .imagenFondo3{
+        position: absolute;
+        z-index: -1;
+        left: 40%;
+        bottom: 0;
+    }
+    .imagenFondo4{
+        display: none;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+    }
+    .imagenFondo5{
+        display: none;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+    }
+    .imagenFondo6{
+        position: absolute;
+        z-index: -1;
+        right: 5%;
+        bottom: 0;
+        display: none;
+    }
+    .arrow{
+        width: 50px;
+        position: absolute;
+        left: 47.5%;
+        bottom: 2%;
+    }
+
+    .header__texto{
+        text-align: center;
+    }
 }
