@@ -161,6 +161,13 @@
     .tema{
         height: 500px;
     }
+
+    .tema h2{
+        font-size: 25px;
+    }
+    .tema p{
+        font-size: 15px;
+    }
     .tema a{
         text-align: center;
         display: flex;
@@ -220,12 +227,17 @@
     .header__texto{
         text-align: center;
     }
+
+    .nombres{
+        padding: 10px 10px;
+    }
 }
 @media (max-width: 667px){
+    
     .imagenFondo1 img{
         width: 350px;
     }
     .tema{
-        height: 540px;
+        height: 480px;
     }
 }
