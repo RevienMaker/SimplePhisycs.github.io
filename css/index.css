@@ -221,3 +221,8 @@
         text-align: center;
     }
 }
+@media (max-width: 667px){
+    .imagenFondo1 img{
+        width: 350px;
+    }
+}
